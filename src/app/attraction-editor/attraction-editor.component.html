@@ -1,0 +1,24 @@
+<form [formGroup]="attractionForm" (ngSubmit)="onSubmit()" novalidate>
+
+<label>
+  Attraction Name:
+  <input type="text" formControlName="tourName">
+</label>
+
+<label>
+  Artist Name:
+  <input type="text" formControlName="artistName">
+</label>
+
+<label>
+  Category:
+  <input type="text" formControlName="category">
+</label>
+
+<label>
+  Description:
+  <input type="text" formControlName="description">
+</label>
+
+<button type="submit" [disabled]="attractionForm.pristine">Submit</button>
+</form>
