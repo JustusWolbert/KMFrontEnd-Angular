@@ -5,6 +5,11 @@ import { Observable, throwError } from 'rxjs';
 
 @Injectable()
 export class AttractionService {
+  httpOptions = {
+    headers: new HttpHeaders({
+      'Content-Type': 'application/json'
+    })
+  };
   constructor(private http: HttpClient) { }
 
   getAttraction(): Observable<Attraction>{
@@ -12,5 +17,8 @@ export class AttractionService {
   }
   getAttractionList(): Observable<Attraction[]>{
     return this.http.get<Attraction[]>('http://localhost:8082/stub');
+  }
+  postAttraction(attr: Attraction): Observable<Attraction>{
+    return this.http.post<Attraction>('http://localhost:8082/attraction', attr, this.httpOptions);
   }
 }
