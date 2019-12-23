@@ -1,3 +1,4 @@
+<attraction-root></attraction-root>
 <form [formGroup]="attractionForm" (ngSubmit)="onSubmit()" novalidate>
 
 <label>
@@ -10,6 +11,7 @@
   <input type="text" formControlName="artistName">
 </label>
 
+<!--
 <label>
   Category:
   <input type="text" formControlName="category">
@@ -19,6 +21,6 @@
   Description:
   <input type="text" formControlName="description">
 </label>
-
+-->
 <button type="submit" [disabled]="attractionForm.pristine">Submit</button>
 </form>
