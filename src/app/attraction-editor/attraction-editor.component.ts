@@ -16,7 +16,7 @@ export class AttractionEditorComponent {
     private as: AttractionService){}
 
   attractionForm = this.fb.group({
-    tourName: [''],
+    attractionName: [''],
     artistName: [''],
     category: [''],
     description: ['']

@@ -16,9 +16,9 @@ export class AttractionService {
     return this.http.get<Attraction>('http://localhost:8082/stub');
   }
   getAttractionList(): Observable<Attraction[]>{
-    return this.http.get<Attraction[]>('http://localhost:8082/stub');
+    return this.http.get<Attraction[]>('http://localhost:8082/attraction/all');
   }
   postAttraction(attr: Attraction): Observable<Attraction>{
-    return this.http.post<Attraction>('http://localhost:8082/attraction', attr, this.httpOptions);
+    return this.http.post<Attraction>('http://localhost:8082/1/attraction', attr, this.httpOptions);
   }
 }
