@@ -1,0 +1,24 @@
+:host {
+    left: 0;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 250px auto auto;
+  grid-gap: 2px;
+  grid-template-areas:
+  "i"
+  "r1"
+  "r2";
+  background: #bbedf2;
+  overflow: hidden;
+  max-height: 500px;
+  max-width: 500px;
+}
+.i {
+  overflow: hidden;
+}
+.i img {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px;
+  width: 100%;
+}

@@ -1,0 +1,39 @@
+:host {
+  display: inline;
+  left: 0;
+  max-width: auto;
+  max-height: auto;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 20%;
+  grid-template-rows: auto 500px 1fr auto;
+  grid-gap: 12px;
+  grid-template-areas:
+  "header header header"
+  "banner banner banner"
+  "content content side"
+  "footer footer footer";
+  height: 100vh;
+}
+.banner {
+  display: block;
+  width: 100%;
+  max-height: 500px;
+  grid-area: banner;
+  overflow: hidden;
+}
+.banner img {
+  display: block;
+  max-width: 100%;
+  max-height: 500px;
+}
+.main-content{
+  grid-area: content;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 12px;
+  grid-template-areas:
+  "flash1 flash1"
+  "flash2 flash2";
+}
