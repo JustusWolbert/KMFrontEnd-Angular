@@ -10,17 +10,15 @@
   <!-- Home page content -->
   <div class="main-content">
 
+    <!-- Hoe maak ik hier een 2x2 overzicht van? -->
     <div *ngIf="attrList">
       <ul style="list-style-type:none;">
-        <li *ngFor="let attraction of attrList">
+        <div *ngFor="let attraction of attrList">
           <flash [attraction]="attraction"></flash>
-        </li>
+        </div>
       </ul>
     </div>
 
-    <div>
-      <h2>Aanbevolen</h2>
-    </div>
   </div>
 
   <!-- Side content -->

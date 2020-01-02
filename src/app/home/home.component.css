@@ -7,7 +7,7 @@
 .container {
   display: grid;
   grid-template-columns: 1fr 20% 3%;
-  grid-template-rows: 500px 1fr;
+  grid-template-rows: 30vw 1fr;
   grid-gap: 0px;
   grid-template-areas:
   "banner banner banner"
@@ -23,7 +23,7 @@
 }
 .banner img {
   position: absolute;
-  top: -235px;
+  top: -335px;
   left: 0px;
   width: 100%;
 }
@@ -33,9 +33,11 @@
   grid-template-columns: 1fr 1fr;
   grid-gap: 12px;
   grid-template-areas:
-  "flash1 flash1"
-  "flash2 flash2";
+  "flash flash";
   margin: 36px;
+}
+.main-content div {
+  max-width: 300px;
 }
 .side {
   grid-area: side;
