@@ -1,13 +1,11 @@
 .container {
   display: grid;
   grid-template-columns: 1fr 20%;
-  grid-template-rows: 300px 1fr auto;
+  grid-template-rows: 30vh auto;
   grid-gap: 0px;
   grid-template-areas:
   "header header"
-  "content side"
-  "info side";
-  height: 100vh;
+  "content side";
 }
 .header {
   position: relative;
@@ -16,11 +14,21 @@
   overflow: hidden;
 }
 .content {
-  display: block;
+  display: grid;
   grid-area: content;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  grid-gap: 0px;
+  grid-template-areas:
+  "events"
+  "info";
   overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 10px 3px;
   border-radius: 4px;
+}
+.events {
+  display: block;
+  grid-area: events;
 }
 .info {
   display: block;
