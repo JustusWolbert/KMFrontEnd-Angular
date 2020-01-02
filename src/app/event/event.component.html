@@ -1,7 +1,10 @@
-<h2>Event HTML component</h2>
-<div class="container">
-  <div *ngIf="event">
-    <div class="r1"><a>{{ event.name }}</a></div>
-    <div class="r2"><h3>{{ event.location }}</h3></div>
+
+  <div class="container" *ngIf="event">
+    <div class="date"><a>{{ event.dateAndTime }}</a></div>
+    <div class="info">
+      <h3>{{ event.venue }} - {{ event.location }}</h3>
+      <a>{{ event.eventName }}</a>
+      <a></a>
+    </div>
+    <div class="tickets"><button class="button">Tickets</button></div>
   </div>
-</div>

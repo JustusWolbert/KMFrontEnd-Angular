@@ -3,7 +3,7 @@ export class Event{
   eventName: string;
   location: string;
   venue: string;
-  timeAndDate: string;
+  dateAndTime: string;
   description: string;
   amountTicket: number;
   priceTicket: number;

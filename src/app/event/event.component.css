@@ -1,0 +1,36 @@
+.container {
+  display: grid;
+  grid-template-columns: 15% 50% 15%;
+  grid-gap: 0px;
+  grid-template-areas:
+  "date info tickets";
+  margin: 2px 0 2px 0;
+  background-color: #FFF;
+}
+.date {
+  display: flex;
+  grid-area: date;
+  align-items: center;
+  padding-left: 15px;
+}
+.info {
+  display: inline;
+  grid-area: info;
+}
+.tickets {
+  display: flex;
+  grid-area: tickets;
+  align-items: center;
+}
+.button {
+  background-color: #FF9200;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
