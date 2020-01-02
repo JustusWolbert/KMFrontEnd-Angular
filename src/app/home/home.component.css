@@ -30,14 +30,20 @@
 .main-content{
   grid-area: content;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-gap: 12px;
   grid-template-areas:
-  "flash flash";
+  "hl-content";
   margin: 36px;
 }
-.main-content div {
-  max-width: 300px;
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.wrapper-child {
+  display: flex;
+  flex: 1 1 auto;
+  max-width: 50%;
 }
 .side {
   grid-area: side;

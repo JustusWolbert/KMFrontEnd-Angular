@@ -11,8 +11,7 @@
   "r1"
   "r2";
   overflow: hidden;
-  max-height: 500px;
-  max-width: 500px;
+  
 }
 .r1 {
   grid-area: r1;

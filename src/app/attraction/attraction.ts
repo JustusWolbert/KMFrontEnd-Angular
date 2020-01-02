@@ -6,4 +6,5 @@ export class Attraction{
   category: string;
   description: string;
   eventList: Event[] = [];
+  imageName: string;
 }

@@ -12,8 +12,8 @@
 
     <!-- Hoe maak ik hier een 2x2 overzicht van? -->
     <div *ngIf="attrList">
-      <ul style="list-style-type:none;">
-        <div *ngFor="let attraction of attrList">
+      <ul class="wrapper" style="list-style-type:none;">
+        <div class="wrapper-child" *ngFor="let attraction of attrList">
           <flash [attraction]="attraction"></flash>
         </div>
       </ul>
