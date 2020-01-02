@@ -2,15 +2,21 @@
 
 <!-- Banner -->
   <div class="banner">
-    <h1>Dit is een banner</h1>
-    <!-- set image as background for banner component -->
-    <img alt="banner-img" src="../assets/images/aditya-chinchure.jpg">
+    <div class="banner-blurb">
+      <div>
+        <h1>Dit is een banner</h1>
+        <a>Lekker feesten op 4 januarie!</a>
+      </div>
+      <div>
+        <button>Tickets</button>
+      </div>
+    </div>
   </div>
 
   <!-- Home page content -->
   <div class="main-content">
 
-    <!-- Hoe maak ik hier een 2x2 overzicht van? -->
+    <!-- List -->
     <div *ngIf="attrList">
       <ul class="wrapper" style="list-style-type:none;">
         <div class="wrapper-child" *ngFor="let attraction of attrList">

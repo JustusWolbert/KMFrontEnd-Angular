@@ -8,5 +8,4 @@ import { Attraction } from '../attraction/attraction';
 })
 export class FlashComponent {
   @Input() attraction : Attraction;
-  mijnvar = "joshua-fuller.jpg";
 }
