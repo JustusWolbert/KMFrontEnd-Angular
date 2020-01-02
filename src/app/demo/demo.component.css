@@ -1,0 +1,36 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 20%;
+  grid-template-rows: 300px 1fr auto;
+  grid-gap: 0px;
+  grid-template-areas:
+  "header header"
+  "content side"
+  "info side";
+  height: 100vh;
+}
+.header {
+  position: relative;
+  display: block;
+  grid-area: header;
+  overflow: hidden;
+}
+.content {
+  display: block;
+  grid-area: content;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 10px 3px;
+  border-radius: 4px;
+}
+.info {
+  display: block;
+  grid-area: info;
+  overflow: hidden;
+}
+.side {
+  display: block;
+  grid-area: side;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.3) -4px 4px 8px 0px;
+  border-radius: 4px;
+}

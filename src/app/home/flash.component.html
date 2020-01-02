@@ -1,8 +1,10 @@
 <div class="container">
+  <div *ngIf="attraction">
   <div class="i">
     <img alt="Live show photograph" src ="../assets/images/austin-neill.jpg">
     <!-- image ratio moet voor alle afbeeldingen gelijk zijn -->
   </div>
-  <a>Category</a>
-  <h3>Name</h3>
+  <div class="r1"><a>{{ attraction.category }}</a></div>
+  <div class="r2"><h3>{{ attraction.artistName }}</h3></div>
+  </div>
 </div>

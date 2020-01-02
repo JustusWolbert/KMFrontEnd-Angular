@@ -1,13 +1,12 @@
 .container {
   display: grid;
   grid-template-columns: 1fr 20%;
-  grid-template-rows: 300px 1fr auto auto;
+  grid-template-rows: 300px 1fr auto;
   grid-gap: 0px;
   grid-template-areas:
   "header header"
   "content side"
-  "info side"
-  "footer footer";
+  "info side";
   height: 100vh;
 }
 .header {

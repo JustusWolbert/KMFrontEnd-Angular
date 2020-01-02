@@ -4,17 +4,14 @@
   max-width: auto;
   max-height: auto;
 }
-
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr 20% 3%;
-  grid-template-rows: auto 500px 1fr auto;
+  grid-template-columns: 1fr 20% 3%;
+  grid-template-rows: 500px 1fr;
   grid-gap: 0px;
   grid-template-areas:
-  "header header header header"
-  "banner banner banner banner"
-  "content content side ."
-  "footer footer footer footer";
+  "banner banner banner"
+  "content side .";
   height: 100vh;
 }
 .banner {

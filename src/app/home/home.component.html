@@ -1,30 +1,29 @@
-<h1>Home page</h1>
 <div class="container">
 
+<!-- Banner -->
   <div class="banner">
     <h1>Dit is een banner</h1>
     <!-- set image as background for banner component -->
     <img alt="banner-img" src="../assets/images/aditya-chinchure.jpg">
   </div>
 
+  <!-- Home page content -->
   <div class="main-content">
-    <div class="flash1">
-      <flash></flash>
-    </div>
-    <div class="flash1">
-      <flash></flash>
-    </div>
-    <div class="flash2">
-      <flash></flash>
-    </div>
-    <div class="flash2">
-      <flash></flash>
+
+    <div *ngIf="attrList">
+      <ul style="list-style-type:none;">
+        <li *ngFor="let attraction of attrList">
+          <flash [attraction]="attraction"></flash>
+        </li>
+      </ul>
     </div>
 
     <div>
       <h2>Aanbevolen</h2>
     </div>
   </div>
+
+  <!-- Side content -->
   <div class="side">
     <a>Advertentie</a>
   </div>

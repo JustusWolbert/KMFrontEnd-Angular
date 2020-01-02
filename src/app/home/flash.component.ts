@@ -1,8 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Attraction } from '../attraction/attraction';
 
 @Component({
   selector: 'flash',
   styleUrls: ['./flash.component.css'],
   templateUrl: './flash.component.html'
 })
-export class FlashComponent {}
+export class FlashComponent {
+  @Input() attraction : Attraction;
+}
