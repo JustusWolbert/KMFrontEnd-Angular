@@ -15,8 +15,47 @@ body {
   grid-area: page-content;
 }
 .footer {
+  display: grid;
+  padding: 3%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+  "KarteMeister links"
+  "Young-Capital .";
+  grid-gap: 20px;
   grid-area: footer;
+  background-color: #2E2820;
 }
+
+.footer-links{
+  color: #FFB655;
+  font-size: 24px;
+}
+.footer-links ul{
+  font-size: 18px;
+  position: relative;
+  list-style-type: none;
+  text-decoration: underline;
+}
+.KarteMeister{
+  text-align: center;
+  color: #FFB655;
+  font-size: 36px;
+}
+.Young-Capital{
+  color: #FFB655;
+  display: block;
+  position: relative;
+  grid-area: Young-Capital;
+}
+
+.Young-Capital img{
+  float: left;
+  margin: 10px;
+  left: 0px;
+  width: 25%;
+}
+
 .topnav {
   grid-area: nav;
   background-color: #000000;
@@ -34,9 +73,14 @@ body {
   color: #FFB655;
   border: none;
   text-align: center;
-  padding: 14px 16px;
+  margin: 0px 0px;
   text-decoration: none;
   font-size: 20px;
+}
+
+
+.nav-b{
+  padding: 14px 16px;
 }
 .topnav a:hover{
   background-color: #FFE0B6;
@@ -54,6 +98,6 @@ body {
 .nav-icon {
   overflow: hidden;
   height: 50px;
-  width: 180px;
+  width: 200px;
   background-image: url("../assets/km-logo.jpg");
 }
