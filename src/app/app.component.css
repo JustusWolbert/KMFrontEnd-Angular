@@ -1,18 +1,33 @@
 body {
   background: #ededed;
 }
-
-
+.app-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 51px auto auto;
+  grid-gap: 0px;
+  grid-template-areas:
+  "nav"
+  "page-content"
+  "footer";
+}
+.page-content {
+  grid-area: page-content;
+}
+.footer {
+  grid-area: footer;
+}
 .topnav {
-  background-color: #FFF;
+  grid-area: nav;
+  background-color: #000000;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  position: sticky;
+  position: absolute;
   top: 0;
-
+  height: 51px;
+  width: 100vw;
 }
-
 .topnav a {
   float: left;
   background-color: #2E2820;
@@ -23,20 +38,16 @@ body {
   text-decoration: none;
   font-size: 20px;
 }
-
 .topnav a:hover{
   background-color: #FFE0B6;
 }
-
 .topnav a.active{
   background-color: #FF9200;
   color: white;
 }
-
-ul {
+.topnav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #FFF;
 }
