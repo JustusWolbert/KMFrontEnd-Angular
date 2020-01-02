@@ -9,9 +9,11 @@
 </nav> -->
 
 <div class="topnav">
-  <a class="active" routerLink="/">Home</a>
-  <a routerLink="/login">Login</a>
-  <a routerLink="/register">Register</a>
+  <ul class="nav">
+    <a routerLinkActive="active" routerLink="/" [routerLinkActiveOptions]="{exact:true}">Home</a>
+    <a routerLinkActive="active" routerLink="/login">Login</a>
+    <a routerLinkActive="active" routerLink="/register">Register</a>
+  </ul>
 </div>
 
 
