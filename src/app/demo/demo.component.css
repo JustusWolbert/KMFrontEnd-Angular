@@ -9,11 +9,21 @@
   "info side";
   height: 100vh;
 }
-.header {
+.banner {
   position: relative;
-  display: block;
+  display: grid;
+  grid-template-columns: 20px 1fr 2fr;
+  grid-gap: 12px;
+  grid-template-areas:
+  ". banner banner";
   grid-area: header;
   overflow: hidden;
+}
+
+.banner img{
+  top: -335px;
+  left: 0px;
+  width: 100%;
 }
 .content {
   display: block;
@@ -21,6 +31,11 @@
   overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 10px 3px;
   border-radius: 4px;
+}
+
+.events{
+  display: block;
+  grid-template-rows: auto;
 }
 .info {
   display: block;
