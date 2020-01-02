@@ -6,7 +6,6 @@
   grid-template-areas:
   "header header"
   "content side";
-  height: 100vh;
 }
 .header {
   position: relative;
@@ -60,7 +59,7 @@
   grid-area: content;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
-  grid-gap: 0;
+  grid-gap: 0px;
   grid-template-areas:
   "events"
   "info";
@@ -68,10 +67,9 @@
   box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 10px 3px;
   border-radius: 4px;
 }
-
-.events{
+.events {
   display: block;
-  grid-template-rows: auto;
+  grid-area: events;
 }
 .info {
   display: block;

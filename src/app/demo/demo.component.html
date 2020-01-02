@@ -15,13 +15,20 @@
   </div>
 
   <div class="content">
-    <!-- List -->
-    <div *ngIf="eventList">
-      <ul style="list-style-type:none;">
-        <div *ngFor="let event of eventList">
-          <event [event]="event"></event>
-        </div>
-      </ul>
+
+    <div class="events">
+      <!-- List -->
+      <div *ngIf="eventList">
+        <ul style="list-style-type:none;">
+          <div *ngFor="let event of eventList">
+            <event [event]="event"></event>
+          </div>
+        </ul>
+      </div>
+    </div>
+
+    <div class="info">
+      <h2>Aanbevolen</h2>
     </div>
 
   </div>
@@ -29,6 +36,5 @@
   <div class="side">
     <a>Advertentie</a>
   </div>
-
 
 </div>
