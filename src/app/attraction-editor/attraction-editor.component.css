@@ -18,7 +18,7 @@ input {
   padding-left: .4em;
 }
 
-button {
+/* button {
   font-family: Arial;
   background-color: #eee;
   border: none;
@@ -35,4 +35,4 @@ button:disabled {
   background-color: #eee;
   color: #ccc;
   cursor: auto;
-}
+} */

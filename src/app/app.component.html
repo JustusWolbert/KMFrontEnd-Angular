@@ -1,5 +1,5 @@
 <!-- nav -->
-<nav class="navbar navbar-expand navbar-dark bg-dark">
+<!-- <nav class="navbar navbar-expand navbar-dark bg-dark">
     <div class="navbar-nav">
         <a class="nav-item nav-link" routerLink="/">Home</a>
         <a class="nav-item nav-link" routerLink="/login">Login</a>
@@ -7,7 +7,16 @@
         <a class="nav-item nav-link" routerLink="/organisers">Organisers</a>
         <a class="nav-item nav-link" routerLink="/visitors">Visitors</a>
     </div>
-</nav>
+</nav> -->
+
+<div class="topnav">
+  <ul class="nav">
+    <a routerLinkActive="active" routerLink="/" [routerLinkActiveOptions]="{exact:true}">Home</a>
+    <a routerLinkActive="active" routerLink="/login">Login</a>
+    <a routerLinkActive="active" routerLink="/register">Register</a>
+  </ul>
+</div>
+
 
 <!-- main content container -->
 <div class="jumbotron">
