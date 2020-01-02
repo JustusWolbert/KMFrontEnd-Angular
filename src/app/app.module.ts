@@ -15,6 +15,7 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { FlashComponent } from './home/flash.component';
+import { DemoComponent } from './demo/demo.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { FlashComponent } from './home/flash.component';
     HomeComponent,
     LoginComponent,
     RegisterComponent,
-    FlashComponent
+    FlashComponent,
+    DemoComponent
   ],
   imports: [
     BrowserModule,

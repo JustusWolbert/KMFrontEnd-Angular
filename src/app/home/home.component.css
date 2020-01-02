@@ -4,17 +4,14 @@
   max-width: auto;
   max-height: auto;
 }
-
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr 20% 3%;
-  grid-template-rows: auto 500px 1fr auto;
+  grid-template-columns: 1fr 20% 3%;
+  grid-template-rows: 30vw 1fr;
   grid-gap: 0px;
   grid-template-areas:
-  "header header header header"
-  "banner banner banner banner"
-  "content content side ."
-  "footer footer footer footer";
+  "banner banner banner"
+  "content side .";
   height: 100vh;
 }
 .banner {
@@ -26,7 +23,7 @@
 }
 .banner img {
   position: absolute;
-  top: -235px;
+  top: -335px;
   left: 0px;
   width: 100%;
 }
@@ -36,9 +33,11 @@
   grid-template-columns: 1fr 1fr;
   grid-gap: 12px;
   grid-template-areas:
-  "flash1 flash1"
-  "flash2 flash2";
+  "flash flash";
   margin: 36px;
+}
+.main-content div {
+  max-width: 300px;
 }
 .side {
   grid-area: side;

@@ -1,32 +1,20 @@
-<!-- nav -->
-<!-- <nav class="navbar navbar-expand navbar-dark bg-dark">
-    <div class="navbar-nav">
-        <a class="nav-item nav-link" routerLink="/">Home</a>
-        <a class="nav-item nav-link" routerLink="/login">Login</a>
-        <a class="nav-item nav-link" routerLink="/register">Register</a>
-        <a class="nav-item nav-link" routerLink="/organisers">Organisers</a>
-        <a class="nav-item nav-link" routerLink="/visitors">Visitors</a>
-    </div>
-</nav> -->
-
-<div class="topnav">
-  <ul class="nav">
+<div class="app-container">
+  <!-- nav -->
+  <div class="topnav">
+    <ul class="nav">
     <a routerLinkActive="active" routerLink="/" [routerLinkActiveOptions]="{exact:true}">Home</a>
     <a routerLinkActive="active" routerLink="/login">Login</a>
     <a routerLinkActive="active" routerLink="/register">Register</a>
     <a class="nav-item nav-link" routerLink="/organisers">Organisers</a>
     <a class="nav-item nav-link" routerLink="/visitors">Visitors</a>
-  </ul>
-</div>
-
-
-<!-- main content container -->
-<div class="jumbotron">
-    <div class="container">
-        <div class="row">
-            <div>
-                <router-outlet></router-outlet>
-            </div>
-        </div>
+    </ul>
+  </div>
+  <!-- main content container -->
+  <div class="page-content">
+    <div>
+      <router-outlet></router-outlet>
     </div>
+  </div>
+  <!-- footer -->
+  <div class="footer"></div>
 </div>
