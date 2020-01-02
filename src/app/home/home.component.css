@@ -19,25 +19,40 @@
   display: block;
   grid-area: banner;
   overflow: hidden;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 20px 0px
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 20px 0px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 60%, transparent 90%), url("src/assets/images/aditya-chinchure.jpg");
+  background-size: cover;
+  background-position: center;
 }
-.banner img {
-  position: absolute;
-  top: -335px;
-  left: 0px;
-  width: 100%;
+.banner div {
+  margin-left: 50px;
+  position: relative;
+  top: 100px;
+  left: 20px;
+}
+.banner a {
+  color: white;
+}
+.banner h1 {
+  color: white;
 }
 .main-content{
   grid-area: content;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-gap: 12px;
   grid-template-areas:
-  "flash flash";
+  "hl-content";
   margin: 36px;
 }
-.main-content div {
-  max-width: 300px;
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.wrapper-child {
+  display: flex;
+  flex: 1 1 auto;
+  max-width: 50%;
 }
 .side {
   grid-area: side;
