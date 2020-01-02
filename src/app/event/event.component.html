@@ -1,1 +1,7 @@
 <h2>Event HTML component</h2>
+<div class="container">
+  <div *ngIf="event">
+    <div class="r1"><a>{{ event.name }}</a></div>
+    <div class="r2"><h3>{{ event.location }}</h3></div>
+  </div>
+</div>
