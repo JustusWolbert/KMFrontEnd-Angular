@@ -20,7 +20,9 @@
     <div *ngIf="attrList">
       <ul class="wrapper" style="list-style-type:none;">
         <div class="wrapper-child" *ngFor="let attraction of attrList">
+          <a href="http://localhost:4200/demo">
           <flash [attraction]="attraction"></flash>
+          </a>
         </div>
       </ul>
     </div>
@@ -30,5 +32,6 @@
   <!-- Side content -->
   <div class="side">
     <a>Advertentie</a>
+    <img alt="ad" src="../assets/woonhuis.jpg">
   </div>
 </div>

@@ -7,12 +7,11 @@
 .container {
   display: grid;
   grid-template-columns: 1fr 20% 3%;
-  grid-template-rows: 30vw 1fr;
+  grid-template-rows: 30vw auto;
   grid-gap: 0px;
   grid-template-areas:
   "banner banner banner"
   "content side .";
-  height: 100vh;
 }
 .banner {
   position: relative;
@@ -55,7 +54,7 @@
   grid-gap: 12px;
   grid-template-areas:
   "hl-content";
-  margin: 36px;
+  margin: 36px 0px 0 0;
 }
 .wrapper {
   display: flex;
@@ -64,11 +63,13 @@
 .wrapper-child {
   display: flex;
   flex: 1 1 auto;
-  max-width: 50%;
+  max-width: 44%;
+  margin: 10px 3% 10px 1%;
 }
 .side {
   grid-area: side;
   background: #FFF;
+  overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.3) -4px 4px 8px 0px;
   height: 100%;
 }
