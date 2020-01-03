@@ -1,6 +1,6 @@
 .container {
   display: grid;
-  grid-template-columns: 15% 50% 15%;
+  grid-template-columns: 20% 50% 15%;
   grid-gap: 0px;
   grid-template-areas:
   "date info tickets";
@@ -12,6 +12,8 @@
   grid-area: date;
   align-items: center;
   padding-left: 15px;
+  font-weight: bold;
+  font-size: 18px;
 }
 .info {
   display: inline;

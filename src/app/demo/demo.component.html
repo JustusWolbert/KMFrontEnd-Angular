@@ -1,15 +1,16 @@
 <div class="container">
 
   <div class="header">
-    <div class="image">
-      <img alt="banner-img" src="../assets/images/attraction1.jpg">
-    </div>
-    <div class="header-text">
-      <div class="artistName-text">
-        Jo Hoode
+
+    <div class="profile">
+      <div class="profile-img">
+        <img alt="profile-img" src="../assets/images/attraction1.jpg">
       </div>
-      <div class="tourName-text">
-        13TH HOUR TOUR
+      <div class="profile-text">
+        <ul>
+          <h2 id="artist-name">Jo Hoode</h2>
+          <h3 id="tour-name">13TH HOUR TOUR</h3>
+        </ul>
       </div>
     </div>
   </div>
@@ -19,7 +20,7 @@
     <div class="events">
       <!-- List -->
       <div *ngIf="eventList">
-        <ul style="list-style-type:none;">
+        <ul id="ul-events" style="list-style-type:none;">
           <div *ngFor="let event of eventList">
             <event [event]="event"></event>
           </div>
@@ -28,7 +29,6 @@
     </div>
 
     <div class="info">
-      <h2>Aanbevolen</h2>
     </div>
 
   </div>
